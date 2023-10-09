@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+<!--<link rel="stylesheet" href="lab1.css">-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jMadx">
+    <title>Manga Store</title>
+    <link rel="shortcut icon" href="/manga_store_icon.ico"/>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href ='#'>Главная</a></li>
+            <li><a href ='#'>Популярное</a></li>
+            <li><a href="#">Свежие новинки</a></li>
+            <li><a href="#">Предзаказ</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <aside>
+        <p>В Японии люди всех возрастов читают мангу. Среда включает в себя произведения в широком спектре жанров: боевик, приключение, бизнес и коммерция, комедия, детектив, драма, история, ужасы, тайна, романтика, научная фантастика и фэнтези, эротика (хентай и экки), спорт и игры, саспенс и другие. Многие манги переведены на другие языки. С 1950-х годов манга становится все более важной частью японской издательской индустрии.</p>
+    </aside>
+    <h1>Манга</h1>
+    <div class="wrapper">
+       <section>
+           <div class="image">
+           <img src="vinland-saga.jpg" height="170">
+           </div>
+           <article class = "annotation-to-image">
+               Эта история начинается в начале XI века, когда господствовавшие в северных морях викинги начинают захват Англии. В эпоху, когда топор являлся более весомым аргументом, чем слово, маленький мальчик теряет своего отца. Став на путь воина, он жаждет честного поединка с убийцей своего отца. Юноша вступает в отряд своего врага и выполняет для него самые сложные задания, получая в награду право на дуэль. Но в каждой их дуэли он проигрывает опыту и возрасту соперника. Продолжая свою жизнь наёмника, невольно он становится участником куда более серьёзного мирового конфликта. История основана на исландских сагах: «Сага об Эрике Рыжем» и «Сага о гренландцах».
+           </article>
+       </section>
+       <section><div class="image">
+           <img src="jujutsu-kaisen.jpg" height="170">
+       </div>
+           <article class = "annotation-to-image">
+               Юдзи Итадори — атлетически сложенный старшеклассник, живущий в Сендае вместе со своим дедушкой. Из-за своей нелюбви к спорту он постоянно избегает школьной команды по лёгкой атлетике, хоть и обладает сверхчеловеческой физической силой. Вместо этого он присоединяется к школьному клубу изучения оккультизма, зависает со старшеклассниками в нём и ровно в 17:00 уходит из школы, чтобы навещать своего дедушку Васукэ Итадори в больнице. На смертном одре дед оставляет Юдзи два наказа: «Всегда помогай людям» и «Умри, окружённый людьми». После его смерти подросток сводит для себя их в одно: каждый человек должен «уйти из жизни достойно».
+           </article>
+       </section>
+    </div>
+    <h2>Сниппет кода</h2>
+    <code>
+        <pre>
+        M = {0: 0, 1: 1}
+
+        def fib(n):
+        if n in M:
+        return M[n]
+        M[n] = fib(n - 1) + fib(n - 2)
+        return M[n]
+        </pre>
+    </code>
+    <h3>Цитата</h3>
+    <p>По словам <cite>Чарльза Буковски</cite> — <q>Интеллектуал о
+        простой вещи говорит сложно — художник сложную вещь описывает
+        простыми словами.</q></p>
+    </p>
+    <blockquote>
+        <p>C без ++ - ампутация без анестезии</p>
+        <cite>Джейсон Стэтхэм</cite>
+    </blockquote>
+    <h3>Формула</h3>
+    C<sub>2</sub>H<sub>5</sub>OH
+    XY<sup>2</sup>
+    <h4>Выделение текста</h4>
+    Я <em>просто обожаю</em> <strong>пельмени!</strong><br>
+    <del>Информация</del><ins>Новая</ins>
+
+
+    <pre>dddddxxxxxxxkkkkkkkkOOOOOOOOOOOO00000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK0000000000000000OOOOOOOOOOOkkkkkkkkkxxxxxxdddddoooooooll
+ddxxxxxxxkkkkkkkkkkOOOOOOOOOOOO000000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK000000000000000000OOOOOOOOOOOkkkkkkkkkxxxxxdddddddoooooo
+xxxxxxxkkkkkkkkOOOOOOOOOOO00000000000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK000000000000000000000OOOOOOOOOOkkkkkkkkkxxxxxxxdddddoooo
+xxxxxkkkkkkkOOOOOOOOOOOO00000000000000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK0KKK0000000000000000000OOOOOOOOOkOkkkkkkkkxxxxxxddddddo
+xxxkkkkkkkkOOOOOOOOOO000000000000000000000000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK000000000000000000000OOOOOOOOOOkkkkkkkkxxxxxxxddddd
+xkkkkkkkkOOOOOOOOOO00000000000000000000000000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKKK0000000KKK000000000000000000000OOOOOOOOOOOkkkkkkkkxxxxxxxdddd
+kkkkkkkOOOOOOOOO00000000000000000000000000000000000000000000000KKKKKKKKKKKKKKKKKKKKKKKKK000000000KK000000000000000000000OOOOOOOOOOOOkkkkkkkkkxxxxxxddd
+kkkkkOOOOOOOOO00000000000000000000000000000000000000000000000000KKKKKKKKKKKKKKK00000000000000000000000000000000000000000OOOOOOOOOOOOOkkkkkkkkkxxxxxxxd
+kkkkOOOOOOOOOO0000000000000000000000000000000000000000000000000000000000K0000000000000000000000000000000000000000000000000OOOOOOOOOOOkkkkkkkkkkkxxxxxx
+kkkkOOOOOOOOOO00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000OOOOOOOOOOOOOOOOkkkkkkkkkkxxxxxx
+kkkkOOOOOOOOOO000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000OOOOOOOOOOOOOOOOOOkkkkkkkkkkxxxxxx
+kkkkkOOOOOOOOOOOO0000000000000000000000000000000000KK000000000000000000000000000000000OOO00000000000000000000000OOOOOOOOOOOOOOOOOOOOOOkkkkkkkkkkxxxxxx
+kkkkkkkOOOOOOOOOOOOOOOO00000000000000000000000000000000000000000OO0000000OOOO00OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkkkkkkkkxxxxxxxx
+kkkkkkkkkOOOOOOOOOOOOOOOOOOOOOOOOO0000OOOO000000000xdO0OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkkkkkkkkkkkxxxxxxxxdd
+xxkkkkkkkkkkkkkkkkOOOOOOOOOOOOOOOOOOOOOkkkkxxdddddl'.:lllllcccccc:::::::cclllllllooddxkkkOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkkkkkkkkkkkxxxxxxxxxxddd
+xxxkxxkkkkkxxxxddxxxxddxxxxddxxxxxddoollccc::;;;;;,,,,,,'''''......'',;::cclcccccc::cllooxxkOkkkOOkOOOOOkOOOOOOOOOOOOOOOkkkkkkkkkkkkkkkkxxxxxxxddxdddd
+xkxxxxdoc:;,,''''',,'''',''',:llllcccc::::::::;;;;;;,,,''''......',:clllc::::::ccc::cdxdollodkkkkkkkkOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxddddddddddo
+cc;,,,.... ..............,;cccc::::;;;;;;;,,,,,,,,,''.........',:llcclcc:::ccccclllc:ldOOkxdoodxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxdddddddddoooo
+,'','................,:ccc:::;;;;;;;;;;;,,,,,''''''........'';:clollclccc::cccclllllc:cdO0OOkxdodxxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxxddddddddooool
+',;::;;;,;;:::::ccllllcc:::::;;;;;;;;;;;;;;;,,,,'''......',,;;:::::cccclllllllllllllllcloxkkkOkxdoool::oxddoddddddxxxxxxxxxxxxxxxxxxxxxxxoc::::;;,,;:;
+,,,,,,,,,,,,,''''''.................. .................',,,,,,,,,,;;;;;;::cccclllllloollloxkkxdodxc:,...;;;;;::;;:::::::::cccccccc::::;;;'........
+.........''....            .   .        ..........'',,;:;;;;;;;:::::::cc::::ccclcclcclllccclll:;,;,...,;;,,'''''',,;,,,;,,,,;;;,;;,'...   ......
+,,,,,,;;;:lolc::;;,''......''..'...'...',,;;;;::::ccllloolcccclllllccccccccccllol:;:cllllllc::,.....,:llolc;,,''.....................       ...
+''''',,,,;,.......... ....':c;'',;::;'..              ...',:clllllllllc::::::::ll:;;lolloollc;,,;clloooolllllcc::;'..........
+,,,,,;;;,'.           .;::clolc:colcc:....  ...        .';coolccllllllccc:,,'...':lcclccclllccccllllllooolllll:,,,'',,;;;,'''.......
+xxxdxxdl;..          ..''..,;:;,'''''.........         .';ldddlcccloolcc;.....,. .,,''''''''''',,,,,,;;;:::clc'.','..';,''',,,',,,'..................
+xxdddol'...  .             .....   ..                   .';clolllclloll;..,...c;. ......  ...  ............,:;. ':,..,lc:::cc::::;;,,,,,,,,,,,,,,,,,,'
+ccccc:;..                  .......   ..     ..        ..':cccllcllllolc..','.,l'.. ..                      .',..'.  .,lxxxxxxddddddoooolllllllllcccccc
+;;;;;,'.....                                   ........';cllllllccccoo;....,''. ..  ...................    ..'......,;cxdxxxxxxxxxxddddddooooooooooooo
+,;;,;,'.......                               ..........;oo:;:::;;;;;:;. ...,'...,,. ...........''''',,''.. ...''..;,''cxxxxxxxxxxxdddddddddddddodddooo
+','',,'.     ...                          ...          .:kO:.'......'.  .,,,,'',;'                          .'...  .;;cdxxxxxxxxxxddddddddddoooooooooo
+'''.''..        ...........................             .:O0c...    ..  .';,'...,'   .........              .. .'...':lodddddddddooooooollllllllllllll
+'''''''..          .  ..................                 .,xk:......     ....,. '.  ':c:ccccc:::::::;;,,'.. .. .,,;.,cllllllloooollllllccccccccccccccc
+.....''.......                                              ..  .....    .  .,,,,.  .'',;;,,''..........      .......''',,,,,,,,,,;;;;;;;;;;;;::::::::
+.................                                                          ..,c,.                    .   ..   ..................................''''''
+                                                                             ..    ...................................................................
+'......                                                ...............................................................................................
+;;;;;,,,''................................................................'''''''''''''...............................................................
+::::::::;;;;,,,''.....................................................................................................................................
+::::;:::::::::::::::;;,,''............................................................................................................................
+;::::;;;;:::::::::::::ccccc:::;,'''''''''''''''''''''''''''.''''''''''''''''''''.........''''''''''''''''''''''''.''''''''''''''..'....'............''
+;;;;;;;;;;;;;;;;:::;;;::ccccclcc:;;,,,,,,;;;;;;;;;;::::::::;;:;;;;;;;;;;::::::::;;;;;;;;:::;;;::::::::::::;;;;;;;;,,,,,,,,,;,,,,,,,,'',,,'''''''''''''
+;;;;,,,,,,,,,,,,,,,;;;;;;;;;::::::::::;;;;;;;:::::::;;:::::;::::::::::::::::::::;;;;;;;;;;;;;;;;;;;;;;;;;;;;,,,;;,,,,,,,''''''''''''''''''''.......'''
+;;;;;;,,',''''''',,,,,,,,;;;;;;;;;;;;;:::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:;;;;;;;;;;;;;;;,,,,,,,,,,;;;,,,,,,,,,,,,,,,,'''''''''''''.............
+''',,,,,'''''''...''''',,,,,,,;;;;;;;;;;;;;,,,,,,,,,;;;,,;,,;;,',,,,,,,,,,;;,,;;;;;;;;;;;,,,,;,,,,''',,''',''',''''',,,'',,,''''''''''''''.'''........
+'''',,,''''''''''..'''''''''''',,,,;;;;;;;;;;;;,,;;;;;,,,,,,,,'''''''''''''''''',,;,,,,,,;;,,,,,,,,',,,,'''''....'''''''''''...........''.............
+'''''''''',,'''''''.........'''''',,,,;;;,,;;;,;;;,,,;;;,,,,,',,,,,;;,,,'..'''.'''''.',',,,,,''',,'''''''''''.........''..............................</pre>
+</main>
+<footer></footer>
+</body>
+</html>
