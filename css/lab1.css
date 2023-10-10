@@ -1,8 +1,13 @@
-*{
-    font-size: 14px;
-    line-height: 14px;
-    font-family: "Bookman Old Style";
-    font-weight: lighter;
+body {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    border-spacing: 0.6rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.07rem;
+    text-indent: 0.6rem;
+    text-transform: none;
 }
 header {
     min-width: 1000px;
@@ -19,18 +24,18 @@ header {
     background-color: #333;
 }
 
-li {
+.li_menu{
     float: left;
 }
 
-li a {
+.li_menu a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover {
+.li_menu a:hover {
     background-color: #111;
 }
 
