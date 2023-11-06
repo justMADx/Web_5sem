@@ -2,6 +2,7 @@
 <html lang="ru-ru" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="jMadx">
     <meta name="keywords" content="манга, магазин манги, купить мангу, атака титанов, магическая битва, паразит">
     <meta name="description" content="Данный проект является магазином манги, на котором представлены все топовые аниме">
@@ -10,26 +11,23 @@
     <link rel="stylesheet" href="/Web_5sem/css/lab1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <nav>
         <ul class="menu">
-            <li class = "li_menu"><a href ='#'>Главная</a></li>
-            <li class = "li_menu"><a href ='#'>Популярное</a></li>
-            <li class = "li_menu"><a href="#">Свежие новинки</a></li>
-            <li class = "li_menu"><a href="#">Предзаказ</a></li>
-            <div class="d1">
+            <li class = "li_menu" id="li_menu_main"><a href ='https://justMADx.github.io/Web_5sem/index.html'>Главная</a></li>
+            <li class = "li_menu"><a href ='https://justMADx.github.io/Web_5sem/popular-items-page.html'>Популярное</a></li>
+            <li class = "li_menu"><a href="https://justMADx.github.io/Web_5sem/new-items-page.html">Свежие новинки</a></li>
+            <li class = "li_menu"><a href="https://justMADx.github.io/Web_5sem/pre-order-page.html">Предзаказ</a></li>
+            <div class="shop-cart"><a href="https://justMADx.github.io/Web_5sem/shop-cart-page.html" ><img class = "shop-cart-image" src="/Web_5sem/img/icons/shop-cart.png" alt="Shop Cart"></a></div>
+            <div class="search-bar">
                 <form>
                     <input type="text" placeholder="Поиск...">
                 </form>
             </div>
-            <div class = "shop-cart">
-                <a href="#">a</a>
-            </div>
+
 
         </ul>
 
@@ -73,7 +71,8 @@
         </section>
     </section>
     </main>
-<footer> 
+<footer>
+    <div class="ad-footer"><img src="/Web_5sem/img/ad.png" class="ad-footer-img"></div>
     <section class = "footer-info">
     Контакты: <a href="https://github.com/justMADx">github.com/justMADx</a><br>
     Адрес магазина: <a href="https://justMADx.github.io/Web_5sem"> justMADx.github.io/Web_5sem</a>

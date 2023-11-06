@@ -1,6 +1,6 @@
 body {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     border-spacing: 0.6rem;
@@ -42,7 +42,8 @@ header {
 .wrapper {
     display: grid;
     grid-column-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    justify-items: start;
 }
 
 form {
@@ -51,13 +52,13 @@ form {
     height: auto;
     margin: 3px 2px 3px 550px;
 }
-.d1 {
+.search-bar {
     background: #333;
     width: 80%;
 }
-.d1 input {
+.search-bar input {
     width: 100%;
-    height: 33px;
+    height: 80%;
     padding-left: 40px;
     border: 2px solid #333;
     border-radius: 5px;
@@ -65,27 +66,84 @@ form {
     background: #F9F0DA;
     color: #333;
 }
+
 .shop-cart{
-    position: relative;
     float: right;
-    margin: 0 50px 10px 0;
-    padding: 20px;
-    width: 8px;
-    height: 8px;
 }
+.shop-cart img:hover {
+    background-color: #111;
+}
+.shop-cart-image{
+    padding: 7px 27px;
+    width: 27px;
+    height: 27px;
+}
+
 .image-item{
-    width: 200px;
-    height: 270px;
+    width: 165px;
+    height: 250px;
     margin: 0 0 5px 0;
     border-radius: 7px;
 }
 .shop-item{
-    width: 220px;
-    height: 300px
+    text-align: center;
+    width: 165px;
+    height: 280px;
+    filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
 }
+
+.shop-item :hover{
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+}
+
 .shop-item_name{
     margin: 0 0 8px auto;
     padding: 0;
-    text-align: center;
 }
 
+.ad-footer-img{
+    width:100%
+}
+
+@media screen and (max-width: 1023px) {
+    .ad-footer, .ad-footer-img {
+        display: none;
+    }
+
+    header{
+        min-width: 50%
+    }
+
+    form{
+        margin: 3px 2px 3px 30%
+    }
+    .li_menu{
+        display: none;
+    }
+    #li_menu_main{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ad-footer, .ad-footer-img {
+        display: none;
+    }
+    form{
+        display:none;
+    }
+    header{
+        min-width: 50%
+    }
+
+    .li_menu{
+        display:none;
+    }
+    #li_menu_main{
+        display: block;
+        font-size: 0.87rem;
+    }
+    body{
+        font-size: 0.87rem;
+    }
+}
