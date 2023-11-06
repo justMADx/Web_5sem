@@ -102,7 +102,7 @@ form {
 }
 
 .ad-footer-img{
-    width:100%
+    width:99%
 }
 
 @media screen and (max-width: 1023px) {
@@ -123,20 +123,19 @@ form {
     #li_menu_main{
         display: block;
     }
+
+    .shop-item{
+        width: 140px;
+        height: 250px;
+    }
+    .image-item{
+        width: 140px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    .ad-footer, .ad-footer-img {
-        display: none;
-    }
     form{
-        display:none;
-    }
-    header{
-        min-width: 50%
-    }
-
-    .li_menu{
         display:none;
     }
     #li_menu_main{
@@ -145,5 +144,8 @@ form {
     }
     body{
         font-size: 0.87rem;
+    }
+    .wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
