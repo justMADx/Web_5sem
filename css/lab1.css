@@ -105,7 +105,7 @@ form {
     width:99%
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 900px) {
     .ad-footer, .ad-footer-img {
         display: none;
     }
