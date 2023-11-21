@@ -1,0 +1,112 @@
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.li_menu a{
+    line-height: 1.5rem;
+}
+
+ul {
+    line-height: 3.4rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+pre {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #111;
+}
+
+.wish-container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.wish-form {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.wish-input {
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.wish-add-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.wish-items {
+    min-width: 100%;
+}
+
+.item {
+    background-color: #999;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+}
+
+.item:first-child {
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.item:last-child {
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.checkbox {
+    margin-right: 0.85rem;
+}
+
+.delete-button {
+    float: right;
+    color:white;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.checked {
+    text-decoration: line-through;
+}

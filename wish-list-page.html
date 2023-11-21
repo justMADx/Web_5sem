@@ -1,5 +1,5 @@
-<!DOCTYPE html5>
-<html lang="ru-ru" dir="ltr">
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,15 +7,17 @@
     <meta name="keywords" content="манга, магазин манги, купить мангу, атака титанов, магическая битва, паразит">
     <meta name="description" content="Данный проект является магазином манги, на котором представлены все топовые аниме">
     <title>Manga Store</title>
-    <link rel="shortcut icon" href="/Web_5sem/img/manga_store_icon.ico"/>
-    <link rel="stylesheet" href="/Web_5sem/css/lab1.css">
+    <link rel="shortcut icon" href="/img/manga_store_icon.ico"/>
+    <link rel="stylesheet" href="/css/wish-list.css">
+    <link rel="stylesheet" href="/css/lab1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap" rel="stylesheet">
-    <script src="scripts/time_to_load.js"></script>
     <script src="scripts/active_menu_item.js"></script>
-
+    <script src="scripts/time_to_load.js"></script>
+    <script type="module" src="/scripts/wish-list-generator.js"></script>
 </head>
+
 <body>
 <header>
     <nav>
@@ -24,10 +26,12 @@
             <li class = "li_menu"><a href ='popular-items-page.html'>Популярное</a></li>
             <li class = "li_menu"><a href="wish-list-page.html">Список желаемого</a></li>
             <li class = "li_menu"><a href="pre-order-page.html">Предзаказ</a></li>
-            <div class="shop-cart"><a href="shop-cart-page.html" ><img class = "shop-cart-image" src="/Web_5sem/img/icons/shop-cart.png" alt="Shop Cart"></a></div>
+            <div class="shop-cart"><a href="shop-cart-page.html" ><img class = "shop-cart-image" src="/img/icons/shop-cart.png" alt="Shop Cart"></a></div>
             <div class="search-bar">
                 <form>
-                    <input type="text" placeholder="Поиск...">
+                    <label>
+                        <input type="text" placeholder="Поиск...">
+                    </label>
                 </form>
             </div>
 
@@ -38,10 +42,16 @@
 
 </header>
 <main>
-    <section class="time_bar">
-        <p>Загрузка заняла:</p>
-        <p class = "time_loaded"></p>
-    </section>
+    <div class="wish-container">
+        <h1>Список желаемого</h1>
+        <form class="wish-form">
+            <label>
+                <input class="wish-input" type="text" placeholder="Добавить желаемое...">
+            </label>
+            <button class="wish-add-button" type="submit">+</button>
+        </form>
+        <ul class="wish-items"></ul>
+    </div>
 </main>
 </body>
 </html>

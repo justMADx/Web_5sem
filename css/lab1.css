@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-size: 0.8rem;
     line-height: 0.9rem;
@@ -10,7 +15,7 @@ body {
     text-transform: none;
 }
 header {
-    min-width: 1000px;
+    min-width: 80%;
     text-align: center;
 }
 .menu {
@@ -22,6 +27,10 @@ header {
     width: 100%;
     overflow: hidden;
     background-color: #333;
+}
+
+.li_menu .active_menu{
+    background-color: #111;
 }
 
 .li_menu{
@@ -39,22 +48,28 @@ header {
     background-color: #111;
 }
 
+.li_menu :active{
+    background-color: #111;
+}
+
 .wrapper {
     display: grid;
     grid-column-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-    justify-items: start;
+    justify-items: center;
 }
 
-form {
+
+.search-bar {
+    background: #333;
+    width: 80%;
+}
+
+.search-bar form {
     position: relative;
     width: 300px;
     height: auto;
     margin: 3px 2px 3px 550px;
-}
-.search-bar {
-    background: #333;
-    width: 80%;
 }
 .search-bar input {
     width: 100%;
@@ -80,6 +95,7 @@ form {
 }
 
 .image-item{
+    display: inline-block;
     width: 165px;
     height: 250px;
     margin: 0 0 5px 0;
@@ -87,7 +103,7 @@ form {
 }
 .shop-item{
     text-align: center;
-    width: 165px;
+    width: 100%;
     height: 280px;
     filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
 }
@@ -97,7 +113,9 @@ form {
 }
 
 .shop-item_name{
-    margin: 0 0 8px auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     padding: 0;
 }
 
@@ -105,7 +123,7 @@ form {
     width:99%
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 975px) {
     .ad-footer, .ad-footer-img {
         display: none;
     }
@@ -114,7 +132,7 @@ form {
         min-width: 50%
     }
 
-    form{
+    .search-bar form{
         margin: 3px 2px 3px 30%
     }
     .li_menu{
@@ -125,7 +143,7 @@ form {
     }
 
     .shop-item{
-        width: 140px;
+        width: 160px;
         height: 250px;
     }
     .image-item{
@@ -135,7 +153,7 @@ form {
 }
 
 @media screen and (max-width: 767px) {
-    form{
+    .search-bar form{
         display:none;
     }
     #li_menu_main{
