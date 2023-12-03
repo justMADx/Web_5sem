@@ -11,8 +11,13 @@ wishForm.addEventListener('submit', function (event) {
     addWish(wishInput.value);
 });
 
+
+function isNotBlank(input) {
+    return input.trim().length > 0;
+}
+
 function addWish(item) {
-    if (item !== '') {
+    if (isNotBlank(item)) {
         const wish = {
             id: Date.now(),
             name: item,
@@ -26,22 +31,26 @@ function addWish(item) {
 }
 
 function renderWishes(wishes) {
+    const patternToReplaceName = 'WishTemplate';
+    const checkBoxValue = 'checkboxvalue';
+    let template = document.querySelector('#wish-template');
     wishItemsList.innerHTML = '';
 
     wishes.forEach(function (item) {
-        const checked = item.completed ? 'checked' : null;
+        let checked = item.completed ? 'checked' : null;
+        let liElem = document.createElement('li');
+        liElem.setAttribute('class', 'item');
+        liElem.setAttribute('data-key', item.id);
 
-        const li = document.createElement('li');
-        li.setAttribute('class', 'item');
-        li.setAttribute('data-key', item.id);
         if (item.completed === true) {
-            li.classList.add('checked');
+            liElem.innerHTML = liElem.innerHTML.replace(checkBoxValue, checked);
+            liElem.classList.add('checked');
         }
+        liElem.append(template.content.cloneNode(true));
+        liElem.innerHTML = liElem.innerHTML.replace(patternToReplaceName, item.name);
 
-        li.innerHTML = `<input type="checkbox" class="checkbox" ${checked}>${item.name}<button class="delete-button">X</button>`;
-        wishItemsList.append(li);
+        wishItemsList.prepend(liElem);
     });
-
 }
 
 function addToLocalStorage(wishes) {
