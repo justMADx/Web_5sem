@@ -6,7 +6,7 @@
     border-color: #111111;
     background-color: white;
     top: 3.5rem;
-    right: 0.7rem;
+    right: 0.1rem;
 }
 #refreshButton:hover{
     background-color: #111111;
@@ -17,6 +17,7 @@
     width: 1.7rem;
     height: 1.7rem;
 }
+
 #photoGrid {
     padding: 3rem 3.5rem 1rem 0.5rem;
     display: grid;

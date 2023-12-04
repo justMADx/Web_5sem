@@ -71,11 +71,18 @@ button:hover {
     font-size: 1.5rem;
 }
 
+.wish-name{
+    display: inline-block;
+    width:60%;
+    overflow: hidden;
+}
+
 .wish-items {
     min-width: 100%;
 }
 
 .item {
+    max-width: 90%;
     background-color: #999;
     padding: 0.7rem;
     font-size: 1.3rem;
@@ -109,4 +116,19 @@ button:hover {
 
 .checked {
     text-decoration: line-through;
+}
+
+@media screen and (max-width: 767px) {
+    .wish-container{
+        padding:3rem 0;
+    }
+    .wish-container h1{
+        font-size: 1.5rem;
+    }
+    .wish-input{
+        font-size:1rem;
+    }
+    .wish-add-button{
+        display: none;
+    }
 }

@@ -41,14 +41,16 @@ function renderWishes(wishes) {
         let liElem = document.createElement('li');
         liElem.setAttribute('class', 'item');
         liElem.setAttribute('data-key', item.id);
+        console.log(liElem);
 
         if (item.completed === true) {
-            liElem.innerHTML = liElem.innerHTML.replace(checkBoxValue, checked);
             liElem.classList.add('checked');
         }
-        liElem.append(template.content.cloneNode(true));
-        liElem.innerHTML = liElem.innerHTML.replace(patternToReplaceName, item.name);
+        let clonedTemplate = template.content.cloneNode(true);
+        clonedTemplate.querySelector('.checkbox').checked = item.completed;
+        clonedTemplate.querySelector('.wish-name').textContent = item.name;
 
+        liElem.appendChild(clonedTemplate);
         wishItemsList.prepend(liElem);
     });
 }

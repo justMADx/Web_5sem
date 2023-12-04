@@ -45,14 +45,14 @@
         <h1>Список желаемого</h1>
         <form class="wish-form">
             <label>
-                <input class="wish-input" type="text" placeholder="Добавить желаемое...">
+                <input maxlength="20" class="wish-input" type="text" placeholder="Добавить желаемое...">
             </label>
             <button class="wish-add-button" type="submit">+</button>
         </form>
         <ul class="wish-items"></ul>
     </div>
     <template id = "wish-template">
-        <input type="checkbox" class="checkbox" checkBoxValue>WishTemplate<button class="delete-button">X</button>
+        <input type="checkbox" class="checkbox"><span class="wish-name"></span><button class="delete-button">X</button>
     </template>
 </main>
 </body>

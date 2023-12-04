@@ -26,7 +26,6 @@ async function update(loader, flag){
         }
         const items = await response.json();
         loader.style.display = 'none';
-        console.log('Items data', items);
         render(items);
     } catch (error){
         console.error('Error while receiving data:', error);
@@ -38,12 +37,10 @@ function render(items){
     const itemListElement = document.getElementById('photoGrid');
     itemListElement.innerHTML = '';
     items.forEach(item =>{
-        console.log(item.title.substr(1,9));
-        console.log(item.thumbnailUrl);
         const itemElement = document.createElement('section');
         itemElement.classList.add('shop-item');
-        itemElement.innerHTML = '<a href="#"><img class="image-item" src="${item.thumbnailUrl}" alt="${item.title.substr(1,9)}"></a>\n' +
-            '               <a href="#" class="shop-item_name">${item.title.substr(1,9)}</a>\n'
+        itemElement.innerHTML = '<a href="#"><img class="image-item" src="'+item.thumbnailUrl+'" alt='+item.title.substr(1,9)+'></a>\n' +
+            '               <a href="#" class="shop-item_name">'+item.title.substr(1,9)+'</a>\n'
         itemListElement.appendChild(itemElement)
     })
 }
