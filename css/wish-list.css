@@ -72,7 +72,7 @@ button:hover {
 }
 
 .wish-name{
-    display: inline-block;
+    display: inline-flex;
     width:60%;
     overflow: hidden;
 }

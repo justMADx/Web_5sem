@@ -31,24 +31,22 @@ function addWish(item) {
 }
 
 function renderWishes(wishes) {
-    const patternToReplaceName = 'WishTemplate';
-    const checkBoxValue = 'checkboxvalue';
     let template = document.querySelector('#wish-template');
     wishItemsList.innerHTML = '';
 
     wishes.forEach(function (item) {
-        let checked = item.completed ? 'checked' : null;
         let liElem = document.createElement('li');
         liElem.setAttribute('class', 'item');
         liElem.setAttribute('data-key', item.id);
-        console.log(liElem);
-
-        if (item.completed === true) {
-            liElem.classList.add('checked');
-        }
         let clonedTemplate = template.content.cloneNode(true);
         clonedTemplate.querySelector('.checkbox').checked = item.completed;
         clonedTemplate.querySelector('.wish-name').textContent = item.name;
+
+        if (item.completed === true) {
+            liElem.classList.add('checked');
+            clonedTemplate.querySelector('.wish-name').classList.add('checked');
+        }
+
 
         liElem.appendChild(clonedTemplate);
         wishItemsList.prepend(liElem);
