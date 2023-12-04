@@ -9,6 +9,7 @@
     <title>Manga Store</title>
     <link rel="shortcut icon" href="/Web_5sem/img/manga_store_icon.ico"/>
     <link rel="stylesheet" href="/Web_5sem/css/lab1.css">
+    <link rel="stylesheet" href="/css/preload.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap" rel="stylesheet">
@@ -36,11 +37,17 @@
 
 </header>
 <main>
+    <section class="require_place">
+        <span id="loader"></span>
+        <button id="refreshButton"><img src="/img/icons/refresh.ico" id="refreshImage"></button>
+    </section>
+    <section id="photoGrid"></section>
     <section class="time_bar">
         <p>Загрузка заняла:</p>
         <p class = "time_loaded"></p>
     </section>
 </main>
+<script src="scripts/script.js"></script>
 <script src="/Web_5sem/scripts/active_menu_item.js"></script>
 </body>
 </html>

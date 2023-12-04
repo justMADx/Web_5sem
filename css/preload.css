@@ -1,0 +1,57 @@
+#refreshButton {
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    border-color: #111111;
+    background-color: white;
+    top: 3.5rem;
+    right: 0.7rem;
+}
+#refreshButton:hover{
+    background-color: #111111;
+}
+
+#refreshImage{
+    border-radius: 1.7rem;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+#photoGrid {
+    padding: 3rem 3.5rem 1rem 0.5rem;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    justify-items: center;
+}
+
+.require_place{
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#loader {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #333333;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.7s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
