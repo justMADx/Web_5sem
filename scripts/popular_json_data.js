@@ -38,9 +38,12 @@ function render(items){
     const itemListElement = document.getElementById('photoGrid');
     itemListElement.innerHTML = '';
     items.forEach(item =>{
-        const itemElement = document.createElement('div');
-        itemElement.classList.add('photo');
-        itemElement.innerHTML = '<img src="${photo.thumbnailUrl}" alt="${photo.title}"> <h3>${photo.title}</h3>'
+        console.log(item.title.substr(1,9));
+        console.log(item.thumbnailUrl);
+        const itemElement = document.createElement('section');
+        itemElement.classList.add('shop-item');
+        itemElement.innerHTML = '<a href="#"><img class="image-item" src="${item.thumbnailUrl}" alt="${item.title.substr(1,9)}"></a>\n' +
+            '               <a href="#" class="shop-item_name">${item.title.substr(1,9)}</a>\n'
         itemListElement.appendChild(itemElement)
     })
 }
