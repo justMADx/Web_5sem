@@ -32,15 +32,16 @@ async function update(loader, flag){
         loader.style.display = 'none';
     }
 }
-
 function render(items){
     const itemListElement = document.getElementById('photoGrid');
     itemListElement.innerHTML = '';
+    const template = document.getElementById('shop-item-template');
+
     items.forEach(item =>{
-        const itemElement = document.createElement('section');
-        itemElement.classList.add('shop-item');
-        itemElement.innerHTML = '<a href="#"><img class="image-item" src="'+item.thumbnailUrl+'" alt='+item.title.substr(1,9)+'></a>\n' +
-            '               <a href="#" class="shop-item_name">'+item.title.substr(1,9)+'</a>\n'
-        itemListElement.appendChild(itemElement)
+        const itemElement = document.importNode(template.content, true);
+        itemElement.querySelector('.image-item').src = item.thumbnailUrl;
+        itemElement.querySelector('.image-item').alt = item.title.substr(1,9);
+        itemElement.querySelector('.shop-item_name').textContent = item.title.substr(1,9);
+        itemListElement.appendChild(itemElement);
     })
 }
