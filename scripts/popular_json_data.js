@@ -9,14 +9,16 @@ document.addEventListener('DOMContentLoaded', async  function(){
     await update(loader, flag);
 })
 
+
 async function update(loader, flag){
     let url = 'https://jsonplaceholder.typicode.com/albums/1/photos';
 
     if(flag){
-        url+='?id_lte=10'
+        url+='?id_lte=16';
     }
+    else
     {
-        url+='?id_gte=10&&id_lte=20'
+        url+='?id_gte=17&&id_lte=32';
     }
 
     try{
@@ -28,6 +30,7 @@ async function update(loader, flag){
         loader.style.display = 'none';
         render(items);
     } catch (error){
+        alert("Проблемы с подключением к серверу. \n Обновите страницу");
         console.error('Error while receiving data:', error);
         loader.style.display = 'none';
     }

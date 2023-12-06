@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body p{
+    padding: 1rem;
+}
+
 body {
     font-size: 0.8rem;
     line-height: 0.9rem;
